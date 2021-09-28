@@ -1,12 +1,8 @@
 import React, { useEffect, useState } from "react";
 
 import MenuItem from "./MenuItem";
-/**
- * @author
- * @function SideMenu
- **/
 
-// added more menuItems for testing
+
 export const menuItems = [
   {
     name: "Home",
@@ -50,16 +46,13 @@ const SideMenu = (props) => {
     props.onCollapse(inactive);
   }, [inactive, props]);
 
-  //just an improvment and it is not recorded in video :(
+  
   const removeActiveClassFromSubMenu = () => {
     document.querySelectorAll(".sub-menu").forEach((el) => {
       el.classList.remove("active");
     });
   };
 
-  /*just a little improvement over click function of menuItem
-    Now no need to use expand state variable in MenuItem component
-  */
   useEffect(() => {
     let menuItems = document.querySelectorAll(".menu-item");
     menuItems.forEach((el) => {
@@ -125,8 +118,8 @@ const SideMenu = (props) => {
       </div>
       <div className="side-menu-footer">
         <div className="user-info">
-          <h5>Rizwan Khan</h5>
-          <p>rizwankhan@gmail.com</p>
+          <h5>Mark Clarke</h5>
+          <p style={{ color: "#626264" }}>markclarke@gmail.com</p>
         </div>
       </div>
     </div>
