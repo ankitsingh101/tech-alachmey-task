@@ -1,0 +1,39 @@
+.right-side-menu {
+  height: 90vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: white;
+  border-top-left-radius: 1.5em;
+  border-bottom-left-radius: 1.5em;
+  padding: 2em 1em;
+  transition: width 0.2s ease-in, opacity 0.2s ease-in;
+}
+.right-side-menu .main-menu {
+  margin-top: 3.5em;
+}
+.right-side-menu .top-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.toggle-close-btn {
+  background: rgb(247, 247, 247) none repeat scroll 0% 0%;
+  border-radius: 10px;
+  width: 2.5em;
+  height: 2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.right-side-menu.inactive {
+  opacity: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+.right-side-menu.active {
+  opacity: 100%;
+  width: 21em;
+}

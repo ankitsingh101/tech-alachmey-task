@@ -1,0 +1,68 @@
+.allRestaurants {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.restaurantCard img {
+  max-width: 100%;
+}
+
+.restaurantCard {
+  width: 20em;
+  margin: 0 0.9em;
+}
+.restaurantCard:first-child,
+.restaurantCard:nth-child(4n) {
+  margin: 0;
+}
+.restaurantImage {
+  max-height: 12em;
+  min-height: 12em;
+  overflow: hidden;
+  border-radius: 16px;
+  background-color: #ecececb5;
+  text-align: center;
+}
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+
+.flag.openNow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: rgba(80, 62, 157, 0.1);
+  border-radius: 4px;
+  padding: 4px 8px;
+  color: #503e9d;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 11px;
+  line-height: 16px;
+}
+
+.flag.closed {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: rgba(251, 109, 58, 0.1);
+  border-radius: 4px;
+  padding: 4px 8px;
+  color: #fb6d3a;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 11px;
+  line-height: 16px;
+}
+
+.description {
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 42px;
+}
+.category {
+  margin-right: 3.5em;
+}

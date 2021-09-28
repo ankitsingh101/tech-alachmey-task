@@ -1,0 +1,37 @@
+.menuwrapper {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+.restaurantCard.menuCard {
+  margin: 0;
+}
+.menuItem {
+  background-color: #f7f7f7;
+  font-size: 14px;
+  line-height: 24px;
+  color: #626264;
+}
+.menuItem.active {
+  background-color: #503e9d;
+  color: white;
+}
+
+.menuItemWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 25em;
+  margin-bottom: 2em;
+}
+
+.menuItem {
+  background-color: #f7f7f7;
+  height: 1.7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
